@@ -97,3 +97,40 @@ figure;
 imshow(temp,[]);
 
 
+%%
+
+clc;
+clear all;
+
+colorImage = imread('frame_00831.jpg');
+grayImage = rgb2gray(colorImage).';
+grayImage = flip(grayImage,2);
+grayImageResized = imresize(grayImage,[256 192]);
+
+depthImage = imread('depth_00831.png').';
+depthImage = flip(depthImage,2);
+
+
+figure;
+imshow(grayImage,[]);
+
+
+figure;
+imshow(grayImageResized,[]);
+
+figure;
+imshow(depthImage,[]);
+
+
+
+%%
+
+1024
+
+
+
+1920 1440
+
+
+
+256 192
